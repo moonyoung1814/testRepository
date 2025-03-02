@@ -9,7 +9,17 @@
 </head>
 
 <body>
-
+    image/*（所有图片类型）
+    <input type="file" name="file" multiple="" accept="image/*" />
+    <br />
+    .jpg .jpeg .png .bmp .webp（常见图片类型）
+    <input type="file" name="file1" accept=".jpg,.jpeg,.png,.bmp,.webp" />
+    <br />
+    image/jpeg image/jpeg image/bmp image/webp（常见图片类型，换了一个写法）
+    <input type="file" name="file2" accept="image/jpeg,image/jpeg,image/bmp,image/webp" />
+    <br />
+    不限制图片类型，直接调用摄像头
+    <input type="file" name="file3" capture="camera" />
 </body>
 
 </html>
